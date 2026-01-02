@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JATIMULYA RESIDENCE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Gambar/Logo2.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="left">
+                <i class="fa-solid fa-envelope"></i> sumiatirosidi97867@gmail.com
+            </div>
+            <div class="right">
+                <span class="phone"><i class="fa-solid fa-phone"></i> 085863648848</span>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo-area">
+                <img src="Gambar/Logo.png" alt="Logo" />
+                <h2>JATIMULYA RESIDENCE</h2>
+            </div>
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#TypeRumah">Type Rumah</a></li>
+                    <li><a href="#Fasilitas">Fasilitas</a></li>
+                    <li><a href="#Kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="Home">
+        <div class="container hero-container">
+            <div class="hero-left">
+                <h1>Kenyamanan Hunian<br>Modern & Elegan</h1>
+                <p>
+                    Nikmati lingkungan hunian yang nyaman, aman, modern, dan bebas banjir. Setiap unit dirancang dengan sentuhan arsitektur terbaik untuk keluarga Anda.
+                </p>
+                <div class="features">
+                    <div><i class="fa-solid fa-house"></i> Pos Security </div>
+                    <div><i class="fa-solid fa-shield"></i> Keamanan 24 Jam</div>
+                    <div><i class="fa-solid fa-seedling"></i> Ruang Terbuka Hijau</div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/085863648848" class="btn-primary">Booking Sekarang</a>
+                    <a href="#TypeRumah" class="btn-secondary">Lihat Type Rumah</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="Gambar/detail.png" alt="Banner Perumahan" />
+            </div>
+            <div class="testimonial">
+                <div class="stars">★ ★ ★ ★ ★</div>
+                <p>"Cluster bebas banjir,alternatif perumahan terbaik di Bekasi. <br>Unit rapi, bersih, serta lingkungan yang sangat nyaman."</p>
+                <div class="user">
+                    <img src="https://i.pravatar.cc/80?img=12" />
+                    <div><b>Fajar Yunanto</b></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
+    <hr class="divider" />
+    <section class="stats-section">
+        <div class="container stats-container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fa-solid fa-tags stat-icon"></i>
+                    <div class="stat-label">Harga Terjangkau</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-location-dot stat-icon"></i>
+                    <div class="stat-label">Lokasi Strategis</div>
+                </div>
+                <div class="stat-item">
+                    <span class="fa-layers fa-fw stat-icon custom-icon">
+                        <i class="fa-solid fa-house"></i>
+                        <i class="fa-solid fa-screwdriver-wrench tool-icon"></i>
+                    </span>
+                    <div class="stat-label">Bisa Custom Layout</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-door-closed stat-icon"></i>
+                    <div class="stat-label">One Gate System</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-shield-halved stat-icon"></i>
+                    <div class="stat-label">Security 24 Jam</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-water stat-icon"></i>
+                    <div class="stat-label">Anti Banjir</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-section">
+        <div class="container about-container">
+            <div class="about-left">
+                <h2>JATIMULYA RESIDENCE</h2>
+                <p class="lead"> Perumahan Minimalis Modern Berkualitas </p>
+                <p class="about-text">
+                    Perumahan ini berada di lokasi strategis dekat tol, stasiun LRT, terminal, dan Stasiun Bekasi, sehingga mobilitas sangat mudah. Dekat pusat perbelanjaan seperti BTC, BCP, Mall Metropolitan, dan Grand Galaxy Park. Fasilitas sekitar juga lengkap, termasuk sekolah dan rumah sakit seperti RS Ananda, Primaya, dan RS Mitra Keluarga. Hunian ini menawarkan akses cepat, kenyamanan, dan kualitas hidup yang lebih baik.
+                </p>
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <div class="about-stat-number">Type 74/70</div>
+                        <div class="about-stat-label">Unit 1</div>
+                    </div>
+                    <div class="about-stat">
+                        <div class="about-stat-number">Type 54/60</div>
+                        <div class="about-stat-label">Unit 2</div>
+                    </div>
+                </div>
+                <div class="about-buttons">
+                    <a href="#TypeRumah" class="btn-primary small">Lihat Type Rumah</a>
+                    <a href="PL Jatimulya Residence. BSI - JR (1).pdf" class="btn-secondary small">Detail Price List</a>
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="img-card large">
+                    <img src="Gambar/Perumahan1.png" alt="Type 74" />
+                </div>
+                <div class="img-card small">
+                    <img src="Gambar/Perumahan3.png" alt="Perumahan" />
+                    <div class="badge">Free<span>AC & BPHTP</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rooms-section" id="TypeRumah">
+        <div class="container">
+            <div class="rooms-head">
+                <p class="rooms-subtitle">Type</p>
+                <h2 class="rooms-title">JATIMULYA RESIDENCE</h2>
+                <p class="rooms-desc">Type unit terbaik, serta menjangkau semua fasilitas publik dan bisa custom layout.</p>
+            </div>
+            <div class="rooms-layout">
+                <article class="room-main-card fade-card">
+                    <div class="room-tag">Tersisa 3 Unit</div>
+                    <div class="room-image-wrap">
+                        <img src="Gambar/Perumahan1.png" alt="Perumahan Jatimulya Residence" class="room-main-img" />
+                        <div class="room-chips">
+                            <span class="chip"><i class="fa-solid fa-vector-square"></i> 70m²</span>
+                            <span class="chip"><i class="fa-solid fa-building"></i> 2 Lantai</span>
+                        </div>
+                    </div>
+                    <div class="room-main-info">
+                        <h3 class="room-name">Unit 1 Type 74/70</h3>
+                        <div class="rating">
+                            <span class="rating-text">Pondasi Bangunan:</span>
+                        </div>
+                        <p class="room-desc">
+                            Rumah Type 74/70 ini dibangun dengan pondasi batu kali dan cakar ayam, struktur beton bertulang, serta dinding double hebel yang kuat. Rangka atap menggunakan baja ringan dengan genteng beton, sementara interior dilengkapi plafon gypsum, lantai granite tile 60x60, kusen aluminium, dan pintu utama berbahan meranti. Rumah ini juga memiliki sanitair shower dan closet duduk, dapur bermeja keramik, instalasi listrik 1300 watt, pompa air dengan tandon, carport rabat beton, serta sistem drainase lengkap berupa resapan, septictank, dan saluran tertutup.
+                        <div class="room-bottom">
+                            <div class="room-price">Rp 882.5 Jt <span class="per-night">per unit</span></div>
+                            <a href="unit1.html" class="btn-primary room-cta">Lihat Unit</a>
+                        </div>
+                    </div>
+                </article>
+                <aside class="room-list" id="room-list">
+                    <div class="room-item fade-card">
+                        <img src="Gambar/Denah1.png" alt="Executive Business Room" class="clickable-denah" />
+                        <div class="info">
+                            <h4>Denah Lantai 1 Type 74/70</h4>
+                            <p class="mini-icons1">
+                                <i class="fa-solid fa-car"></i> Carport Luas <br>
+                                <i class="fa-solid fa-tree"></i> Private Taman <br>
+                                <i class="fa-solid fa-couch"></i> Ruang Tamu Nyaman <br>
+                                <i class="fa-solid fa-bath"></i> Kamar Mandi<br>
+                                <i class="fa-solid fa-bed"></i> Kamar Tidur Lantai 1 <br>
+                                <i class="fa-solid fa-kitchen-set"></i> Dapur Fungsional
+                            </p>
+                        </div>
+                    </div>
+                    <div class="room-item fade-card">
+                        <img src="Gambar/Denah2.png" alt="Denah Unit" class="clickable-denah" />
+                        <div class="info">
+                            <h4>Denah Lantai 2 Type 74/70</h4>
+                            <p class="mini-icons2">
+                                <i class="fa-solid fa-bed"></i> 2 Kamar Tidur <br>
+                                <i class="fa-solid fa-bath"></i> 1 Kamar Mandi <br>
+                                <i class="fa-solid fa-couch"></i> Ruang Keluarga <br>
+                                <i class="fa-solid fa-building"></i> Balkon Mini
+                            </p>
+                        </div>
+                    </div>
+                    <div class="room-item fade-card">
+                        <img src="Gambar/Denah3.jpg" alt="Denah Unit" class="clickable-denah" />
+                        <div class="info">
+                            <h4>Detail Ukuran Unit</h4>
+                            <p class="mini-icons3">
+                                <i class="fa-solid fa-door-open"></i> One Gate System <br>
+                                <i class="fa-solid fa-house"></i> 10 Unit Rumah <br>
+                                <i class="fa-solid fa-ruler-combined"></i> Ukuran Berbeda Tiap Unit <br>
+                                <i class="fa-solid fa-road"></i> Akses Jalan Utama Lurus <br>
+                                <i class="fa-solid fa-shield-halved"></i> Pos Security
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="rooms-section2">
+        <div class="container">
+            <div class="rooms-layout">
+                <article class="room-main-card fade-card">
+                    <div class="room-tag">Tersisa 4 Unit</div>
+                    <div class="room-image-wrap">
+                        <img src="Gambar/detaill.png" alt="Denah Unit" class="room-main-img" />
+                        <div class="room-chips">
+                            <span class="chip"><i class="fa-solid fa-vector-square"></i> 60m²</span>
+                            <span class="chip"><i class="fa-solid fa-building"></i> 2 Lantai</span>
+                        </div>
+                    </div>
+                    <div class="room-main-info">
+                        <h3 class="room-name">Unit 2 Type 54/60</h3>
+                        <div class="rating">
+                            <span class="rating-text">Pondasi Bangunan:</span>
+                        </div>
+                        <p class="room-desc">
+                            Rumah Type 54/60 ini dibangun dengan pondasi batu kali dan cakar ayam, struktur beton bertulang, serta dinding double hebel yang kuat. Rangka atap menggunakan baja ringan dengan genteng beton, sementara interior dilengkapi plafon gypsum, lantai granite tile 60x60, kusen aluminium, dan pintu utama berbahan meranti. Rumah ini juga memiliki sanitair shower dan closet duduk, dapur bermeja keramik, instalasi listrik 1300 watt, pompa air dengan tandon, carport rabat beton, serta sistem drainase lengkap berupa resapan, septictank, dan saluran tertutup.
+                        <div class="room-bottom">
+                            <div class="room-price">Rp 778 jt <span class="per-night">per unit</span></div>
+                            <a href="unit2.html" class="btn-primary room-cta">Lihat Unit</a>
+                        </div>
+                    </div>
+                </article>
+                <aside class="room-list" id="room-list">
+                    <div class="room-item fade-card">
+                        <img src="Gambar/Denahh.png" alt="Detail" class="clickable-denah" />
+                        <div class="info">
+                            <h4>Denah Lantai 1 Type 54/60</h4>
+                            <p class="mini-icons4">
+                                <i class="fa-solid fa-car"></i> Carport Luas <br>
+                                <i class="fa-solid fa-tree"></i> Private Taman <br>
+                                <i class="fa-solid fa-couch"></i> Ruang Tamu Nyaman <br>
+                                <i class="fa-solid fa-bath"></i> Kamar Mandi<br>
+                                <i class="fa-solid fa-kitchen-set"></i> Dapur Fungsional
+                            </p>
+                        </div>
+                    </div>
+                    <div class="room-item fade-card">
+                        <img src="Gambar/Denahh2.png" alt="Detail" class="clickable-denah" />
+                        <div class="info">
+                            <h4>Denah Lantai 2 Type 54/60</h4>
+                            <p class="mini-icons5">
+                                <i class="fa-solid fa-bed"></i> 2 Kamar Tidur <br>
+                                <i class="fa-solid fa-bath"></i> 1 Kamar Mandi <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="room-item fade-card">
+                        <img src="Gambar/Denah3.jpg" alt="Denah Unit" class="clickable-denah" />
+                        <div class="info">
+                            <h4>Detail Ukuran Unit</h4>
+                            <p class="mini-icons3">
+                                <i class="fa-solid fa-door-open"></i> One Gate System <br>
+                                <i class="fa-solid fa-house"></i> 10 Unit Rumah <br>
+                                <i class="fa-solid fa-ruler-combined"></i> Ukuran Berbeda Tiap Unit <br>
+                                <i class="fa-solid fa-road"></i> Akses Jalan Utama Lurus <br>
+                                <i class="fa-solid fa-shield-halved"></i> Pos Security
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="amenities-section" id="Fasilitas">
+        <div class="container">
+            <h2 class="amenities-title">FASILITAS</h2>
+            <p class="amenities-subtitle">Mudah Menjangkau Semua Fasilitas Publik</p>
+            <div class="amenities-grid">
+                <div class="amenity-card fade-card">
+                    <div class="amenity-image">
+                        <img src="https://cdn-healthcare.hellohealthgroup.com/2022/11/1667881839_6369db6fb003b3.49576713.jpg" alt="Fasilitas Kesehatan" />
+                        <i class="fa-solid fa-heart-pulse amenity-icon"></i>
+                    </div>
+                    <h3>Fasilitas Kesehatan</h3>
+                    <p class="mini-icons2">
+                                <i class="fa-solid fa-hospital"></i> ± 2 Menit ke RS Ananda Tambun Selatan <br>
+                                <i class="fa-solid fa-hospital-user"></i> ±7 Menit ke Primaya Hospital Bekasi Timur <br>
+                                <i class="fa-solid fa-stethoscope"></i> ± 10 Menit ke RS Mitra Keluarga Tambun <br>
+                                <i class="fa-solid fa-heart-pulse"></i> ±10 Menit ke RS Mitra Bekasi Timur
+                            </p>
+                    <div class="amenity-features">
+                        <span><i class="fa-solid fa-check-circle"></i> Medis Terdekat</span>
+                    </div>
+                </div>
+                <div class="amenity-card fade-card">
+                    <div class="amenity-image">
+                        <img src="https://astraotoshop.com/asset/article-aop/gerbang%20tol%20bekasi%20timur%202_20250521.webp" alt="Fasilitas Akses" />
+                        <i class="fa-solid fa-road amenity-icon"></i>
+                    </div>
+                    <h3>Fasilitas Akses</h3>
+                    <p class="mini-icons5">
+                                <i class="fa-solid fa-car-side"></i> ± 5 Menit ke Gerbang Tol Bekasi Timur 1 <br>
+                                <i class="fa-solid fa-car"></i> ± 5 Menit ke Gerbang Tol Bekasi Timur 2 <br>
+                                <i class="fa-solid fa-road"></i> ± 5 Menit ke Jalan Raya Pantura
+                            </p>
+                    <div class="amenity-features">
+                        <span><i class="fa-solid fa-check-circle"></i> Cepat</span>
+                        <span><i class="fa-solid fa-check-circle"></i> Strategis</span>
+                    </div>
+                </div>
+
+                <div class="amenity-card fade-card">
+                    <div class="amenity-image">
+                        <img src="https://globalprestasi.sch.id/wp-content/uploads/2024/05/fasilitas-sekolah-global-prestasi-school.jpg" alt="Fasilitas Sekolah" />
+                        <i class="fa-solid fa-graduation-cap amenity-icon"></i>
+                    </div>
+                    <h3>Fasilitas Sekolah</h3>
+                    <p class="mini-icons2">
+                                <i class="fa-solid fa-school"></i> ± 1 Menit ke SMP Thariq Bin Ziyad <br>
+                                <i class="fa-solid fa-graduation-cap"></i> ± 3 Menit ke SMPN 4 Tambun Selatan <br>
+                                <i class="fa-solid fa-book"></i> ± 3 Menit ke SDN Jatimulya <br>
+                                <i class="fa-solid fa-user-graduate"></i> ±5 Menit ke SMAN 6 Tambun Selatan
+                            </p>
+                    <div class="amenity-features">
+                        <span><i class="fa-solid fa-check-circle"></i> Pendidikan Berkualitas</span>
+                    </div>
+                </div>
+
+                <div class="amenity-card fade-card">
+                    <div class="amenity-image">
+                        <img src="Gambar/fasil.jpg" alt="Fasilitas Perbelanjaan" />
+                        <i class="fa-solid fa-bag-shopping amenity-icon"></i>
+                    </div>
+                    <h3>Fasilitas Perbelanjaan</h3>
+                    <p class="mini-icons2">
+                                <i class="fa-solid fa-store"></i> ± 8 Menit ke Bekasi Trade Center <br>
+                                <i class="fa-solid fa-bag-shopping"></i> ± 17 Menit ke Bekasi Cyber Park <br>
+                                <i class="fa-solid fa-shop"></i> ± 18 Menit ke Mall Metropolitan <br>
+                                <i class="fa-solid fa-cart-shopping"></i> ± 25 Menit ke Grand Galaxy Park
+                            </p>
+                    <div class="amenity-features">
+                        <span><i class="fa-solid fa-check-circle"></i> Praktis</span>
+                        <span><i class="fa-solid fa-check-circle"></i> Pusat Belanja</span>
+                    </div>
+                </div>
+
+                <div class="amenity-card fade-card">
+                    <div class="amenity-image">
+                        <img src="https://asset.kompas.com/crops/cLMEnkUP3XuMkEevBwuef56gcrg=/0x0:0x0/1200x800/data/photo/2023/07/12/64ae684b79e40.jpg" alt="Fasilitas Transportasi" />
+                        <i class="fa-solid fa-subway amenity-icon"></i>
+                    </div>
+                    <h3>Fasilitas Transportasi</h3>
+                     <p class="mini-icons2">
+                                <i class="fa-solid fa-subway"></i> ± 9 Menit ke Stasiun LRT Jatimulya <br>
+                                <i class="fa-solid fa-train"></i> ± 11 Menit ke Stasiun Tambun <br>
+                                <i class="fa-solid fa-bus"></i> ± 12 Menit ke Terminal Bekasi <br>
+                                <i class="fa-solid fa-route"></i> ± 17 Menit ke Stasiun Bekasi
+                            </p>
+                    <div class="amenity-features">
+                        <span><i class="fa-solid fa-check-circle"></i> Mudah</span>
+                        <span><i class="fa-solid fa-check-circle"></i> Akses Cepat</span>
+                    </div>
+                </div>
+
+                <div class="amenity-card fade-card">
+                    <div class="amenity-image">
+                        <img src="https://www.rumah123.com/seo-cms/assets/rainbow_garden_4b75d7d67e/rainbow_garden_4b75d7d67e.jpg" alt="Fasilitas Hiburan" />
+                        <i class="fa-solid fa-seedling amenity-icon"></i>
+                    </div>
+                    <h3>Fasilitas Hiburan</h3>
+                    <p class="mini-icons2">
+                        <i class="fa-solid fa-water"></i> ± 10 Menit ke Go! Wet Waterpark <br>
+                        <i class="fa-solid fa-water-ladder"></i> ± 15 Menit ke Transera Waterpark <br>
+                        <i class="fa-solid fa-child"></i> ± 20 Menit ke Rainbow Garden Bekasi
+                    </p>
+
+                    <div class="amenity-features">
+                        <span><i class="fa-solid fa-check-circle"></i> Menyenangkan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="location-section" id="Kontak">
+    <div class="container location-container">
+        <div class="location-left">
+            <button class="location-tab">Location</button>
+            <h1 class="location-title">Jatimulya Residence</h1>
+            <p class="location-desc">
+                Perumahan minimalis modern dengan akses mudah ke fasilitas umum, tol, stasiun, dan pusat perbelanjaan. Nikmati kenyamanan hunian bebas banjir di lokasi premium Bekasi.
+                Hunian ideal untuk keluarga dengan lingkungan aman dan hijau.
+            </p>
+            <div class="location-details" aria-hidden="true">
+            </div>
+
+            <div class="location-buttons">
+                <a href="https://www.google.com/maps/place/JATIMULYA+RESIDENCE+BEKASI/@-6.2704187,107.0253828,17z/data=!3m1!4b1!4m6!3m5!1s0x2e698f0053bbe891:0xf45e41bc541e4b82!8m2!3d-6.270424!4d107.0279577!16s%2Fg%2F11c6rpy4z0?entry=ttu"
+                   target="_blank" class="btn-view-map">View on Map</a>
+                <a href="https://wa.me/0895422390944" class="btn-book-now">Contact Now</a>
+            </div>
+        </div>
+
+        <div class="location-map">
+            <div class="map-badge" aria-hidden="true">
+                <i class="fa-solid fa-map-pin badge-icon" aria-hidden="true"></i>
+                <span class="badge-text">JATIMULYA RESIDENCE</span>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9491438172613!2d107.02538277475097!3d-6.2704186937183035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698f0053bbe891%3A0xf45e41bc541e4b82!2sJATIMULYA%20RESIDENCE%20BEKASI!5e0!3m2!1sid!2sid!4v1763790662782!5m2!1sid!2sid"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+<footer class="footer-modern">
+    <div class="footer-container">
+        
+        <div class="footer-text">
+            © Copyright <strong>JATIMULYA RESIDENCE</strong>. All Rights Reserved<br>
+            Designed by <span>Annisa Febrianti</span>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.facebook.com/sumiati.rosidi" class="icon"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/grandwismaresidence?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="icon"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        </div>
+
+    </div>
+</footer>
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
